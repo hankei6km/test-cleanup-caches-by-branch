@@ -1,0 +1,23 @@
+{
+  "name": "test-cleanup-caches-by-branch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankei6km/test-cleanup-caches-by-branch.git"
+  },
+  "keywords": [],
+  "author": "hankei6km <hankei6km@gmail.com> (https://github.com/hankei6km)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hankei6km/test-cleanup-caches-by-branch/issues"
+  },
+  "homepage": "https://github.com/hankei6km/test-cleanup-caches-by-branch#readme",
+  "dependencies": {
+    "notion2hast": "^0.1.1"
+  }
+}
