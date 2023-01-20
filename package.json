@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/hankei6km/test-cleanup-caches-by-branch#readme",
   "dependencies": {
+    "chanpuru": "^0.2.1",
     "notion2hast": "^0.1.1"
   }
 }
