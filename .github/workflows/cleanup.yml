@@ -18,7 +18,7 @@ jobs:
           echo "--"
           echo "${HEAD_REF}"
         env:
-          PAYLOAD: ${{ json(github.event.pull_request) }}
+          PAYLOAD: ${{ toJson(github.event.pull_request) }}
           HEAD_REF: ${{ github.head_ref }}
 
       - name: Cleanup
