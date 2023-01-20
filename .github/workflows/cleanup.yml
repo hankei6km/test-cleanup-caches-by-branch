@@ -12,6 +12,15 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
+      - name: Print
+        run: |
+          echo "${PAYLOAD}"
+          echo "--"
+          echo "${HEAD_REF}"
+        env:
+          PAYLOAD: ${{ json(github.event.pull_request) }}
+          HEAD_REF: ${{ github.head_ref }}
+
       - name: Cleanup
         run: |
           gh extension install actions/gh-actions-cache
