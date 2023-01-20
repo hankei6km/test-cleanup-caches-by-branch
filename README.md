@@ -43,7 +43,7 @@ jobs:
 
 しかし、`BRANCH=${{ github.ref }}` だと大体はデフォルトブランチになる。これに関しての issue も立っている。
 
-https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-based-on-the-head-or-base-branch-of-a-pull-request
+https://github.com/github/docs/issues/22727
 
 このリポジトリで試した場合だと下記のことがわかった。
 
