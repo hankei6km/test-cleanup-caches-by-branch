@@ -1,8 +1,8 @@
 # test-cleanup-caches-by-branch
 
-[Force deleting cache entries](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#force-deleting-cache-entries) のテスト。
+[Force deleting cache entries](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows#force-deleting-cache-entries) のサンプルのテスト。
 
-2023-01-21 時点では下記のようなコードになっている。
+2023-01-21 時点のサンプルは下記のようなコードになっている。
 
 ```yaml
 name: cleanup caches by a branch
@@ -50,4 +50,6 @@ https://github.com/github/docs/issues/22727
 - `actions: write` の permission が必要
 - `$BRANCH` は `github.head_ref` を使うとプルリクエストのブランチのキャッシュ消せた
 
-実際のコードは `clean.yml` に記述してある。
+試したときのコードは `clean.yml` に記述してある。
+
+https://github.com/hankei6km/test-cleanup-caches-by-branch/blob/main/.github/workflows/cleanup.yml
