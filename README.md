@@ -48,7 +48,11 @@ https://github.com/github/docs/issues/22727
 このリポジトリで試した場合だと下記のことがわかった。
 
 - `actions: write` の permission が必要
-- `$BRANCH` は `github.head_ref` を使うとプルリクエストのブランチのキャッシュ消せた
+- ~~`$BRANCH` は `github.head_ref` を使うとプルリクエストのブランチのキャッシュ消せた~~
+- `$BRANCH` の指定はキャッシュを作ったときの event によって変化する
+  - `pull_request` の場合は[上記 issue](https://github.com/github/docs/issues/22727) の通り
+  - `push` の場合は `github.head_ref`
+  - 他の event や type だとまた違うかもしれない
 
 試したときのコードは `clean.yml` に記述してある。
 
